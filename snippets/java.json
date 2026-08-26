@@ -1,0 +1,110 @@
+{
+  "Package declaration": {
+    "prefix": "pkg",
+    "body": [
+      "package ${1:com.example};",
+      "$0"
+    ],
+    "description": "package 선언문"
+  },
+
+  "Public class": {
+    "prefix": "class",
+    "body": [
+      "package ${1:com.example};",
+      "",
+      "public class ${2:ClassName} {",
+      "    $0",
+      "}"
+    ],
+    "description": "package + public class 뼈대"
+  },
+
+  "Main method": {
+    "prefix": "psvm",
+    "body": [
+      "public static void main(String[] args) {",
+      "    $0",
+      "}"
+    ],
+    "description": "public static void main"
+  },
+
+  "System.out.println": {
+    "prefix": "sout",
+    "body": [
+      "System.out.println($0);"
+    ],
+    "description": "표준 출력"
+  },
+
+  "System.out.printf": {
+    "prefix": "soutf",
+    "body": [
+      "System.out.printf(\"${1:%s}%n\", $0);"
+    ],
+    "description": "포맷 출력"
+  },
+
+  "Constructor": {
+    "prefix": "ctor",
+    "body": [
+      "public ${1:ClassName}(${2:}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "생성자"
+  },
+
+  "For loop": {
+    "prefix": "fori",
+    "body": [
+      "for (int ${1:i} = 0; $1 < ${2:count}; $1++) {",
+      "    $0",
+      "}"
+    ],
+    "description": "인덱스 for문"
+  },
+
+  "For-each loop": {
+    "prefix": "fore",
+    "body": [
+      "for (${1:String} ${2:item} : ${3:collection}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "향상된 for문"
+  },
+
+  "Try catch": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "    $1",
+      "} catch (${2:Exception} e) {",
+      "    $0",
+      "}"
+    ],
+    "description": "try-catch"
+  },
+
+  "Getter": {
+    "prefix": "get",
+    "body": [
+      "public ${1:String} get${2:FieldName}() {",
+      "    return ${3:field};",
+      "}"
+    ],
+    "description": "getter 메서드"
+  },
+
+  "Setter": {
+    "prefix": "set",
+    "body": [
+      "public void set${1:FieldName}(${2:String} ${3:value}) {",
+      "    this.${4:field} = $3;",
+      "}"
+    ],
+    "description": "setter 메서드"
+  }
+}

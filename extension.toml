@@ -1,0 +1,9 @@
+id = "java-snippets"
+name = "Java Snippets"
+version = "0.1.0"
+schema_version = 1
+authors = ["Joggoaleo-tech <Joggoaleo-tech@users.noreply.github.com>"]
+description = "Handy Java code snippets (sout, psvm, class, ctor, getters/setters, etc.)"
+repository = "https://github.com/Joggoaleo-tech/zed-java-snippets"
+
+snippets = ["./snippets/java.json"]
