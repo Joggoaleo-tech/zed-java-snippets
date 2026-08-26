@@ -5,7 +5,7 @@
       "package ${1:com.example};",
       "$0"
     ],
-    "description": "package 선언문"
+    "description": "Package declaration"
   },
 
   "Public class": {
@@ -17,7 +17,7 @@
       "    $0",
       "}"
     ],
-    "description": "package + public class 뼈대"
+    "description": "Package and public class skeleton"
   },
 
   "Main method": {
@@ -35,7 +35,7 @@
     "body": [
       "System.out.println($0);"
     ],
-    "description": "표준 출력"
+    "description": "Standard output"
   },
 
   "System.out.printf": {
@@ -43,7 +43,7 @@
     "body": [
       "System.out.printf(\"${1:%s}%n\", $0);"
     ],
-    "description": "포맷 출력"
+    "description": "Formatted output"
   },
 
   "Constructor": {
@@ -53,7 +53,7 @@
       "    $0",
       "}"
     ],
-    "description": "생성자"
+    "description": "Constructor"
   },
 
   "For loop": {
@@ -63,7 +63,7 @@
       "    $0",
       "}"
     ],
-    "description": "인덱스 for문"
+    "description": "Indexed for loop"
   },
 
   "For-each loop": {
@@ -73,7 +73,7 @@
       "    $0",
       "}"
     ],
-    "description": "향상된 for문"
+    "description": "Enhanced for-each loop"
   },
 
   "Try catch": {
@@ -85,7 +85,7 @@
       "    $0",
       "}"
     ],
-    "description": "try-catch"
+    "description": "try-catch block"
   },
 
   "Getter": {
@@ -95,7 +95,7 @@
       "    return ${3:field};",
       "}"
     ],
-    "description": "getter 메서드"
+    "description": "Getter method"
   },
 
   "Setter": {
@@ -105,6 +105,6 @@
       "    this.${4:field} = $3;",
       "}"
     ],
-    "description": "setter 메서드"
+    "description": "Setter method"
   }
 }
